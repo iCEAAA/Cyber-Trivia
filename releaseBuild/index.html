@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | trivia</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=720 height=1280 style="width: 720px; height: 1280px; background: #303030"></canvas>
+    <script src="Build/1de4e3bedae2380dcefcac20dc0bad02.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/a8c482d5bf6862185886469608f3ac91.data.unityweb",
+        frameworkUrl: "Build/4bf7a9fa2f0a1ddf19a6c182a8ccc30a.js.unityweb",
+        codeUrl: "Build/85de9822ae0627a3e32e18de8fca19f0.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "trivia",
+        productVersion: "1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
